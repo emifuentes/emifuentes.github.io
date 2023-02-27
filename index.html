@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C. Gregory CV</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--MiCSS-->
+    <link rel="stylesheet" href="CSS/cv.css">
+    <!--Modoclaro-->
+    <link rel="stylesheet" href="CSS/modoclaro.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font Titulo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap" rel="stylesheet">
+    <!--Font 2 italic-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    <!--Font Párrafos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+
+<body>
+
+    <header>
+        <!--Nav Scrollspy-->
+        <nav id="navbar-scroll" class="navbar col-12 px-3 mb-3 fixed-top">
+            <a class="navbar-brand" href="#">Carolina Gregory</a>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presentacion">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="btn-modo-dia" type="button" title="Cambiar a modo claro"><i class="fa-regular fa-sun"></i></button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="btn-modo-noche" type="button" title="Cambiar a modo oscuro"><i class="fa-regular fa-moon"></i></button>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+
+    
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="perfil">
+                    <div class="imagen">
+                        <img src="./fotoperfil.jpg" alt="Foto de perfil">
+                    </div>
+                    
+                    <!----Acordion info perfil--->
+
+                    <div class="accordion" id="accordionPerfilInfo">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="px-3">Información Personal</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    <div class="infoPers">
+                                        <ul class="ul-perfil">
+                                            <li>
+                                                <span class="icon"><i class="fa-regular fa-calendar-check"></i></span>
+                                                <span class="text"><b>Fecha de nacimiento</b><br>09/07/1994</span>
+                                            </li>
+                    
+                                            <li>
+                                                <span class="icon"><i class="fa-regular fa-heart"></i></span>
+                                                <span class="text"><b>Estado civil</b><br>Soltero</span>
+                                            </li>
+                    
+                                            <li>
+                                                <span class="icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                                                <span class="text"><b>Nacionalidad</b><br>Córdoba, Argentina</span>
+                                            </li>
+                    
+                                            <li>
+                                                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                                                <span class="text"><b>Dirección</b><br>9153 E North St</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fa-solid fa-language"></i>
+                                    <span class="px-3">Idiomas</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    <div class="infoIdiomBars">
+                                        <ul class="ul-perfil">
+                                            <li>
+                                            <span class="text">Español</span>
+                                            <div class="progress" style="height: 10px;">
+                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            </li>
+                    
+                                            <li>
+                                            <span class="text">Inglés</span>
+                                            <div class="progress" style="height: 10px;">
+                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            </li>
+                                    
+                                            <li>
+                                            <span class="text">Alemán</span>
+                                            <div class="progress" style="height: 10px;">
+                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            </li>
+                    
+                                            <li>
+                                            <span class="text">Portugués</span>
+                                            <div class="progress" style="height: 10px;">
+                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <span class="px-3">Otros Intereses</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    <div class="infoHobbys">
+                                        <ul class="ul-perfil">
+                                            <li>
+                                            <span class="icon"><i class="fa-solid fa-camera-retro"></i></span>
+                                            <span class="text">Fotografía</span>
+                                            </li>
+                    
+                                            <li>
+                                            <span class="icon"><i class="fa-solid fa-bicycle"></i></span>
+                                            <span class="text">Ciclismo</span>
+                                            </li>
+                    
+                                            <li>
+                                            <span class="icon"><i class="fa-solid fa-guitar"></i></span>
+                                            <span class="text">Guitarra</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="fa-regular fa-handshake"></i>
+                                    <span class="px-3">Contacto</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                                <div class="accordion-body">
+                                    <div class="infoContacto">
+                                        <ul class="ul-perfil">
+                                            <li>
+                                            <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                                            <a href="mailto:carolina.gregory@email.com?Subject=Oferta%20laboral" title="Enviame un mail">carolina.gregory@email.com</a>
+                                            </li>
+                    
+                                            <li>
+                                            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                                            <span class="text">+54 (351) 749-3065</span>
+                                            </li>
+                    
+                                            <li>
+                                            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                                            <a href="https://www.linkedin.com/in/thejlo/" title="Ir a un LinkedIn falso" target="_blank">linkedin.com/me</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <main>
+                    <section id="presentacion">
+                        <h1 id="titulo">Carolina Gregory</h1>
+                        <h4 id="profesion">Desarrolladora de software</h4>
+                        <p id="about" class="parrafo">Desarrolladora de software con 7 años de experiencia en diseño, instalación, pruebas y mantenimiento de sistemas de software. Dominio de varios lenguajes y plataformas de programación. Al día con las últimas tendencias en informática, motivada y dispuesta al aprendizaje. Capacidad de resolución de problemas. Buenas habilidades de colaboración dentro de un equipo productivo. En busca de nuevos desafíos en el área de competencia, como también en otros campos.</p>
+                    </section>
+
+                    <!--Barras de habilidades-->
+                    
+                    <section id="habilidades">
+                        <h3 class="titulo2">Habilidades</h3>
+
+                        <ul>
+                            <li class="skill-item">
+                                <span class="skill-name">Java</span>
+
+                                <div class="progress">
+                                    <div id="barraJava" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </li>
+
+                            <li class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="progress">
+                                    <div id="barraC" class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                </div>
+                            </li>
+
+                            <li class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="progress">
+                                    <div id="barraPython" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </li>
+
+                            <li class="skill-item">
+                                <span class="skill-name">PL/SQL</span>
+                                <div class="progress">
+                                    <div id="barraSQL" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </li>    
+                        </ul>
+                    </section>
+
+
+
+                    <section id="experiencia">
+                    
+                    <!--lo voy a copiar directamente de algun cv que encuentre en google porque no tengo cerebro para estas cosas im sorry-->
+                        <h3 class="titulo2">Experiencia profesional</h3>
+
+                        <div class="expItem">
+                            <h6 class="expFecha">09/2019 - Hasta la fecha</h6>
+                            <h4 class="empresa">SonGoku Company</h4>
+                            <h5 class="expRol">Desarrollador</h5>
+                            <ul>
+                                <li class="parrafo">Resolución de problemas de alta complejidad utilizando últimas tecnologías móviles, web y de nube.</li>
+                                <li class="parrafo">Análisis de procesos trabajando en diferentes sistemas de la empresa, en incidencias y demandas, generando documentación funcional para desarrollos en lenguaje .NET.</li>
+                                <li class="parrafo">Capacidad de trabajo con los equipos de investigación para definir y ejecutar los desarrollos en cada una de las fases de los proyectos.</li>
+                            </ul>
+                        </div>
+
+                        <div class="expItem">
+                            <h6 class="expFecha">12/2017 - 07/2019</h6>
+                            <h4 class="empresa">Pippin IT</h4>
+                            <h5 class="expRol">Desarrollador</h5>
+                            <ul>
+                                <li class="parrafo">Colaboración productiva con equipo de producción para conocer los requisitos y las especificaciones empresariales en torno a la gestión de carteras, el análisis y los riesgos.</li>
+                                <li class="parrafo">Codificación eficaz de cambios y alteraciones de software en base a especificaciones de diseño concretas.</li>
+                                <li class="parrafo">Realizacion de tareas de prueba automatizadas y desarrollo de funciones complejas de forma rutinaria.</li>
+                            </ul>
+                        </div>
+
+                        <div class="expItem">
+                            <h6 class="expFecha">02/2015 - 11/2017</h6>
+                            <h4 class="empresa">Messi Technologies</h4>
+                            <h5 class="expRol">Programador de sistemas</h5>
+                            <ul>
+                                <li class="parrafo">Implementacion y actualizacion de modulos de aplicación bajo la direccion de desarrolladores senior.</li>
+                                <li class="parrafo">Evaluacion de la función, rendimiento y mantenimiento de diversos proyectos.</li>
+                                <li class="parrafo">Participacion en proyectos de software libre.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                
+                    <!--Linea de tiempo. Toda la info es falsa esta persona no existe.
+                    Quería poner una linea de tiempo pero no supe cómo hacerla así que saqué el codigo de
+                    esta página https://regardis.com/como-hacer-una-linea-del-tiempo-con-html-y-css/-->
+                    
+                    <section id="educacion">
+                        <h3 class="titulo2">Educación</h3>
+                        <div class="linea-tiempo">
+                            <div class="momento">
+                              <h5>2011</h5>
+                              <div class="descripcion">
+                                Bachiller con orientación en economía y gestion de las organizaciones | Instituto Superior Gotham.
+                              </div>
+                            </div>
+                            <div class="momento">
+                              <h5>2012</h5>
+                              <div class="descripcion">
+                                Curso introducción a la programación.<br>Curso operador de PC.<br>Examen internacional Cambridge English: First (FCE).
+                              </div>
+                            </div>
+                            <div class="momento">
+                              <h5>2013</h5>
+                              <div class="descripcion">
+                                Tecnicatura Universitaria en Desarrollo de Software | Universidad Argentina de la Empresa (UADE).
+                              </div>
+                            </div>
+                            <div class="momento">
+                              <h5>2017</h5>
+                              <div class="descripcion">
+                                Curso introducción a Python.<br>Curso Java avanzado.
+                              </div>
+                            </div>
+                            <div class="momento">
+                                <h5>2019</h5>
+                                <div class="descripcion">
+                                  Examen internacional Alemán Goethe-Zertifikat A2 | Goethe Institut.
+                                </div>
+                            </div>
+                            <div class="momento">
+                                <h5>2020</h5>
+                                <div class="descripcion">
+                                  Curso Python avanzado.<br>Curso Introducción al Front-end TICMAS Academy.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="col-12">          
+        <div id="footMail">
+            <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+            <a href="mailto:carolina.gregory@email.com?Subject=Oferta%20laboral" title="Enviame un mail">carolina.gregory@email.com</a>
+        </div>
+        
+        <div id="footTel">
+            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+            <span class="text-footer">+54 (351) 749-3065</span>
+        </div>
+        <div id="footLinkedin">
+            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+            <a href="https://www.linkedin.com/in/thejlo/" title="Ir a un LinkedIn falso" target="_blank">linkedin.com/me</a>
+        </div>
+        
+        <div id="footRedes">
+            <ul>
+                <li>
+                   <span class="footIcon"><i class="fa-brands fa-instagram"></i></span>
+                   <a href="https://www.instagram.com/leomessi/" title="Ir a un Instagram falso" target="_blank">Instagram</a>
+                </li>
+        
+                <li>
+                   <span class="footIcon"><i class="fa-brands fa-twitter"></i></span>
+                   <a href="https://twitter.com/elonmusk" title="Ir a un Twitter falso" target="_blank">Twitter</a>
+                </li>
+        
+                <li>
+                   <span class="footIcon"><i class="fa-brands fa-youtube"></i></span>
+                   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" title="Ir a un Youtube falso" target="_blank">Youtube</a>
+                </li>
+            </ul>
+        </div> 
+    </footer>
+
+     <!--Mi JS-->
+    <script src="JS/cv-funcion.js"></script>   
+
+    <!--JS de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!--No sé quién evaluará este proyecto final pero por medio de comentario aprovecho a agradecer
+a Ticmas y a Daniel Rinaldi que a través de los videos y podcast explicó muy bien y aprendí mucho :)-->

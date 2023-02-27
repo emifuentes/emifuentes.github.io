@@ -1,0 +1,401 @@
+
+body{
+    background-color: #121212;
+    
+}
+
+/**NAVBAR */
+
+#navbar-scroll {
+    background-color: #631645;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Cormorant', serif;
+    color:rgb(245, 170, 245);
+    font-size: 30px;
+}
+
+.navbar-brand:hover{
+    color: #e8e6e3;
+}
+
+.nav-link {
+    font-family: 'Chivo', sans-serif;
+    color:rgb(245, 170, 245);
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    color: #e8e6e3;
+}
+
+#btn-modo-dia {
+    width: 35px;
+    border-radius: 50%;
+    border-color: #ffff;
+    margin-top: 5px;
+}
+
+#btn-modo-noche {
+    width: 35px;
+    background-color: #121212;
+    border-color: #2b2b2b;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#btn-modo-noche i {
+    color: #ffff;
+    
+}
+
+
+
+/**PERFIL (img y acordion) */
+
+.imagen {
+   
+    width: 100%;
+}
+
+img {
+    height: auto;
+    width: 70%;
+    border-radius: 50%;
+    border: 8px solid #631645;
+    margin: 20px 60px;
+}
+
+.perfil li {
+    list-style-type: none;
+}
+
+
+
+.perfil{
+    width: 100%;
+    padding-top: 120px;
+}
+
+.perfil .accordion{
+    width: 95%;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.accordion{
+    --bs-accordion-bg: #f9f9f9;
+    --bs-accordion-btn-focus-border-color: #e686fe;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(228 79 255 / 25%);
+    --bs-accordion-active-color: #a609c3;
+    --bs-accordion-active-bg: #eedefb;
+}
+
+#accordionPerfilInfo{
+    padding: 20px 0px 0px 20px;
+}
+
+
+.accordion-button {
+    background-color: #ebebeb;
+    color: #631645;
+    font-family: 'Chivo', sans-serif;
+}
+
+.accordion-body {
+    font-family: 'Chivo', sans-serif;
+}
+
+.ul-perfil li{
+    padding: 5px;
+}
+
+.ul-perfil a{
+    color: #a609c3;
+}
+
+ul.ul-perfil{
+    padding: 0px 0px 0px 10px;
+}
+
+
+/**MAIN  */
+
+#titulo{
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-size: 80px;
+    width: 100%;
+    letter-spacing: 3px;
+    color: #e8e6e3;
+    
+}
+
+#profesion{
+    font-family: 'Crimson Text', serif;
+    font-size: 39px;
+    color: #bdc1c6;
+    border-bottom: 2px solid rgb(204, 145, 204);
+    margin-bottom: 30px;
+
+}
+
+
+.parrafo {
+    font-family: 'Chivo', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #e8e6e3;
+}
+
+.titulo2 {
+    font-family: 'Cormorant', serif;
+    font-size: 45px;
+    color: #e8e6e3;
+    border-bottom: 2px solid rgb(204, 145, 204);
+    margin-bottom: 20px;
+}
+
+
+section {
+    padding-top: 120px;
+}
+
+
+/** ESTILOS DE LAS BARRAS DE HABILIDADES */
+
+.skill-item {
+    padding: 15px;
+    color:rgb(245, 170, 245);
+    font-size: 20px;
+}
+
+.skill-name{
+    color: #e8e6e3;
+    font-family: 'Chivo', sans-serif;
+    font-size: 17px;
+}
+
+.progress-bar {
+    background-color: #631645;
+
+}
+
+#barraJava {
+    animation: loadJava 3s normal forwards;
+    
+}
+
+@keyframes loadJava {
+    0% { width: 0; }
+    100% { width: 85%; }
+}
+
+#barraC {
+    animation: loadC 3s normal forwards;
+}
+
+@keyframes loadC {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+
+#barraPython {
+    animation: loadPython 3s normal forwards;
+}
+
+@keyframes loadPython {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+
+#barraSQL {
+    animation: loadSQL 3s normal forwards;
+}
+
+@keyframes loadSQL {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+
+
+
+/** ESTILOS EXP*/
+
+.expFecha {
+    font-family: 'Chivo', sans-serif;
+    color:#bdc1c6;
+}
+
+.expRol {
+    font-family: 'Crimson Text', serif;
+    color: #bdc1c6;
+    font-size: 25px;
+    
+}
+
+.empresa{
+    font-family: 'Cormorant', serif;
+    font-size: 35px;
+    color: #e8e6e3;
+    
+}
+
+.expItem{
+    padding-top: 25px;
+}
+
+
+
+
+
+
+/**ESTILO TIMELINE (https://regardis.com/como-hacer-una-linea-del-tiempo-con-html-y-css/) */
+
+.linea-tiempo {
+    position: relative;
+    width: 500px;
+    max-width: 95vw;
+    height: 100%;
+    font-family: 'Chivo', sans-serif;
+    font-size: 17px;
+  }
+  
+
+  .linea-tiempo::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #000;
+    left: 50%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .momento {
+    position: relative;
+    width: 45%;
+    box-sizing: border-box;
+    
+  }
+  
+  .momento:nth-child(even) {
+    left: 55%;
+  }
+  
+  /** Bolitas*/
+  .momento::after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 10px);
+    right: calc(-11.11% - 11.5px);
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  
+  .momento:nth-child(even)::after {
+    left: calc(-11.11% - 8.5px);
+  }
+  
+  .momento h5 {
+    margin: 10px 0px;
+    font-size: 20px;
+    text-align: center;
+    color:#bdc1c6;
+  }
+  
+  .momento .descripcion {
+    background-color: #e8e6e3;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 22px;
+    font-size: 15px;
+  }
+  
+  .momento .descripcion::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: calc(50% + 10px);
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid #e8e6e3;
+  }
+  
+  .momento:nth-child(even) .descripcion {
+    background-color: #631645;
+    color: white;
+  }
+  
+  /** triangulitos*/
+  .momento:nth-child(even) .descripcion::after{
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #631645;
+    border-left: none;
+  }
+
+
+
+
+
+/** ESTILO FOOTER */
+
+footer {
+    color: whitesmoke;
+    padding: 30px;
+    background-color: #631645;
+    justify-content: space-evenly;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color:rgb(245, 170, 245);
+}
+
+footer a:hover{
+    color:#e8e6e3;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+
+
+/**MediaQuery para desktop */
+
+@media only screen and (min-width: 768px) {
+
+    .perfil{
+        padding-top: 60px;
+    }
+
+    #accordionPerfilInfo{
+        padding: 20px 20px 0px 0px;
+    } 
+
+    section {
+        padding-top: 65px;
+    }
+
+    .linea-tiempo{
+        margin-left: 120px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}    
+

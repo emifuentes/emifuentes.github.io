@@ -1,0 +1,71 @@
+
+body.modoclaro{
+    background-color: rgb(232, 230, 230);   
+}
+
+/**-Espero que quien me corrija no se espante con tanta repeticion pero cuando intenté usar selectores para repetir
+menos, cambiaba al modo oscuro y se seguían manteniendo estos colores del modo claro :( Seguro hay una forma de hacerlo
+mejor pero bueno, así funciona-
+ */
+
+.modoclaro #titulo {
+    color:black;
+}
+
+.modoclaro #profesion{
+    color:black;
+}
+
+.modoclaro .parrafo{
+    color:black;
+}
+
+.modoclaro .titulo2{
+    color:black;
+}
+
+.modoclaro .skill-name{
+    color:black;
+}
+
+.modoclaro .progress {
+    --bs-progress-bg: #c7c7c7;
+}
+
+.modoclaro .empresa{
+    color:black;
+}
+
+.modoclaro .expFecha{
+    color:rgb(36, 36, 36);
+}
+.modoclaro .expRol {
+    color:rgb(36, 36, 36);
+}
+
+.modoclaro .momento h5{
+    color:#631645;
+}
+
+.modoclaro .momento .descripcion{
+    background-color: white;
+    color:black
+}
+
+.modoclaro .momento .descripcion::after {
+    border-left: 12px solid white;
+}
+
+.modoclaro .momento:nth-child(even) .descripcion {
+    background-color: #631645;
+    color: white;
+}
+
+.modoclaro .momento:nth-child(even) .descripcion::after{
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #631645;
+    border-left: none;
+}
+
